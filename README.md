@@ -1,5 +1,5 @@
 # Fen-Plugin说明
-Fen-Plugin是一个Yunzai-Bot的升级插件
+Fen-Plugin是一个Yunzai-Bot的扩展插件
 # 当前版本
 [**fen-plugin-0.0.2**](https://github.com/litefen/fen-plugin)
 ## 使用说明
