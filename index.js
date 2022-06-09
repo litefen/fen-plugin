@@ -1,9 +1,10 @@
-import { about } from "./apps/about.js";
-import { allface } from "./apps/allface.js";
+import { about, fenversion } from "./apps/about.js";
+// import { allface } from "./apps/allface.js";
 import { version } from "./components/Changelog.js";
 export {
     about,
-    allface
+    fenversion
+    // allface
 };
 
 
@@ -14,12 +15,18 @@ let rule = {
         priority: 1,
         describe: "【#粉酱详情】 #粉酱详情",
     },
-    //全局表情
-    allface: {
-        reg: "",
+    fenversion: {
+        reg: "^#?粉酱版本$",
         priority: 1,
-        describe: "全局列表",
+        describe: "粉酱版本",
     },
+
+    //全局表情
+    // allface: {
+    //     reg: "",
+    //     priority: 1,
+    //     describe: "全局列表",
+    // },
 };
 
 // lodash.forEach(rule, (r) => {

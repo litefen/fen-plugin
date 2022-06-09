@@ -1,16 +1,20 @@
-import { segment } from "oicq";
+
 import lodash from "lodash";
 import fs from "fs";
-import md5 from "md5";
-
+import { version, changelogs } from "../components/Changelog.js";
 const _path = process.cwd();
 
 export const rule = {
   //帮助说明
   about: {
-    reg: "^#*(命令|帮助|菜单|about|说明|功能|指令|使用说明)$",
-    priority: 50,
-    describe: "【#帮助】查看指令说明",
+    reg: "^#?(粉酱)?(详情|说明|使用说明)$",
+    priority: 1,
+    describe: "【#粉酱详情】 #粉酱详情",
+  },
+  fenversion: {
+    reg: "^#?粉酱版本$",
+    priority: 1,
+    describe: "粉酱版本",
   }
 };
 
@@ -25,58 +29,12 @@ export async function about(e) {
   }
   let msg = [];
   if (!e.isMaster && e.isGroup && lodash.random(0, 3) <= 1) {
-    msg.push("功能使用演示发送#小影详情查看");
+    msg.push("当前版本0.0.1");
   }
-  let img;
-  if (useImg) {
-    img = `file:///${_path}/resources/about/about.png`;
-  }
-  else {
-    await getabout();
-    if (aboutImg) {
-      img = `base64://${aboutImg}`;
-    } else {
-      img = `file:///${_path}/resources/about/about.png`;
-    }
-  }
-
-  msg.unshift(segment.image(img));
-
   e.reply(msg);
   return true;
 }
-
-async function getabout() {
-  let path = "resources/about/about/about.json";
-
-  let aboutData = fs.readFileSync(path, "utf8");
-  let JsonMd5 = md5(aboutData);
-
-  try {
-    aboutData = JSON.parse(aboutData);
-  } catch (error) {
-    Bot.logger.error(`resources/about/about/about.json错误`);
-    return false;
-  }
-
-  if (!aboutImg || JsonMd5 != aboutMd5) {
-
-    let packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
-
-    aboutMd5 = JsonMd5;
-    aboutImg = await render("about", "about", {
-      aboutData,
-      hd_bg: "神里绫人",
-      version: packageJson.version,
-    });
-  }
-
-  return aboutData;
-}
-
-
-export function version(e) {
-  let packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
-  e.reply(`当前版本：v${packageJson.version}`);
+export function fenversion(e) {
+  e.reply(`当前版本：v${version}`);
   return true;
 }
