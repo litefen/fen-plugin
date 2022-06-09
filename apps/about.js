@@ -1,5 +1,6 @@
 
 import lodash from "lodash";
+import { segment } from "oicq";
 import fs from "fs";
 import { version, changelogs } from "../components/Changelog.js";
 const _path = process.cwd();
@@ -11,6 +12,11 @@ export const rule = {
     priority: 1,
     describe: "【#粉酱详情】 #粉酱详情",
   },
+  help: {
+    reg: "^#?(cookie|功能)?(详情|说明|使用说明|演示)$",
+    priority: 1,
+    describe: "",
+  },
   fenversion: {
     reg: "^#?粉酱版本$",
     priority: 1,
@@ -20,9 +26,8 @@ export const rule = {
 
 let aboutImg, aboutMd5;
 
-//是否使用本地帮助图片
-///resources/about/about.png
 let useImg = false;
+
 export async function about(e) {
   if (e.at && !e.atBot) {
     return;
@@ -33,6 +38,15 @@ export async function about(e) {
   }
   e.reply(msg);
   return true;
+}
+export async function help(e) {
+  let msg = [
+    //@用户
+    segment.at(e.user_id),
+    //文本消息
+    "\ncookie绑定指南：https://blog.litefen.com/all/bbscookie.html\n所有功能详细使用指南：https://blog.litefen.com/all/yunzaihelp.html",
+  ];
+  e.reply(msg);
 }
 export function fenversion(e) {
   e.reply(`当前版本：v${version}`);
