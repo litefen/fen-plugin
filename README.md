@@ -1,16 +1,18 @@
 # Fen-Plugin说明
-Fen-Plugin是一个Yunzai-Bot的扩展插件，（缝合怪）
+Fen-Plugin是一个Yunzai-Bot的扩展插件（缝合怪）；粉酱
 # 当前版本
-2022年6月10日 [**fen-plugin-0.0.3**](https://github.com/litefen/fen-plugin)
-## 使用说明
+2022年6月10日 [**粉酱fen-plugin-0.0.3**](https://github.com/litefen/fen-plugin)
+# 使用说明
+## 安装
 在\yunzai-bot\plugins文件夹打开cmd
 
 `git clone  https://github.com/litefen/fen-plugin.git`
 
-## 可能遇到的问题
+## 更新
 
-有问题很正常，能跑就行，不能跑那就卸载吧，我还没开发好
+ 发送#粉酱更新、#粉酱强制更新（如果你对粉酱进行过修改、强制更新会全部失效）
 
+或者在fen-plugin目录打开cmd手动git pull
 # 当前功能
 
 <details>
@@ -48,3 +50,6 @@ Fen-Plugin是一个Yunzai-Bot的扩展插件，（缝合怪）
 
 # 其他
 QQ群 [1082436231](https://jq.qq.com/?_wv=1027&k=VKPVXSfU)
+## 可能遇到的问题
+
+有问题很正常，能跑就行，不能跑那就卸载吧，我还没开发好
