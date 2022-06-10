@@ -3,6 +3,7 @@ import { about, help, fenversion } from "./apps/about.js";
 import { version } from "./components/Changelog.js";
 import { sese, sese1 } from "./apps/不可以涩涩.js"
 import { 群主, 调戏 } from "./apps/群主写真.js"
+import { 全局 } from "./apps/全局.js"
 export {
     about,
     help,
@@ -10,10 +11,9 @@ export {
     sese,
     sese1,
     群主,
-    调戏
+    调戏,
+    全局
 
-
-    // allface
 };
 
 
@@ -53,6 +53,11 @@ let rule = {
         reg: "^#?(女装|写真|私房|涩涩|色色|泡水|男同)小粉$", //匹配消息正则，命令正则
         priority: 50, //优先级，越小优先度越高
         describe: "给发送群主：女装|写真|私房的人 自动禁言一分钟", //【命令】功能说明【#例子】开发简单示例演示
+    },
+    全局: {
+        reg: "", //匹配消息正则，命令正则
+        priority: 20, //优先级，越小优先度越高
+        describe: "【文件名】就是触发指令", //【命令】功能说明
     },
 
     //全局表情
