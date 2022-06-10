@@ -1,19 +1,20 @@
 import { about, help, fenversion } from "./apps/about.js";
-// import { allface } from "./apps/allface.js";
 import { version } from "./components/Changelog.js";
+import { fenupdate, fenupdate2 } from "./components/update.js";
 import { sese, sese1 } from "./apps/不可以涩涩.js"
 import { 群主, 调戏 } from "./apps/群主写真.js"
 import { 全局 } from "./apps/全局.js"
 export {
     about,
     help,
+    fenupdate,
+    fenupdate2,
     fenversion,
     sese,
     sese1,
     群主,
     调戏,
     全局
-
 };
 
 
@@ -33,6 +34,16 @@ let rule = {
         reg: "^#?粉酱版本$",
         priority: 2,
         describe: "粉酱版本",
+    },
+    fenupdate: {
+        reg: "^#*粉酱更新$", //匹配消息正则，命令正则
+        priority: 5000, //优先级，越小优先度越高
+        describe: "自主git pull，请先确认git pull命令有效", //【命令】功能说明
+    },
+    fenupdate2: {
+        reg: "^#*粉酱强制更新$", //匹配消息正则，命令正则
+        priority: 5000, //优先级，越小优先度越高
+        describe: "强制更新", //【命令】功能说明
     },
     sese: {
         reg: "^#?(涩涩|色色|瑟瑟|sese)$", //匹配消息正则，命令正则
