@@ -7,6 +7,9 @@ Fen-Plugin是一个Yunzai-Bot的扩展插件
 
 在\yunzai-bot\plugins文件夹打开cmd
 `git clone  https://github.com/litefen/fen-plugin.git`
+## 可能遇到的问题
+
+有问题很正常，能跑就行，不能跑那就卸载吧，我还没开发好
 
 # 当前功能
 
