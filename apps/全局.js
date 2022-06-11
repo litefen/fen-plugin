@@ -17,7 +17,7 @@ let fileArr = new Map();
 export const rule = {
   全局: {
     reg: "", //匹配消息正则，命令正则
-    priority: 20, //优先级，越小优先度越高
+    priority: 200, //优先级，越小优先度越高
     describe: "【文件名】就是触发指令", //【命令】功能说明
   },
 };

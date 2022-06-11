@@ -9,7 +9,7 @@ const _path = process.cwd();
 export const rule = {
     newcomers: {
         reg: "^#欢迎新人$", //匹配消息正则，命令正则
-        priority: 50, //优先级，越小优先度越高
+        priority: 500, //优先级，越小优先度越高
         describe: "【#欢迎新人】开发简单示例演示", //【命令】功能说明
     },
 };
