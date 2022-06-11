@@ -1,9 +1,10 @@
 import fs from "fs";
 import { segment } from "oicq";
-import fetch from "node-fetch";
+import lodash from "lodash";
 import { exec } from "child_process";
+import { currentVersion, fenVersion } from "./Changelog.js";
 import { createRequire } from "module";
-const _path = process.cwd();
+import Common from "../components/Common.js";
 
 const mresPath = `${_path}/plugins/fen-plugin/`;
 let packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
@@ -11,7 +12,8 @@ let upKey = "fenlite:github-pushed";
 
 export const rule = {
     fenupdate: {
-        reg: "^#*粉酱更新$", //匹配消息正则，命令正则
+        hashMark: true,
+        reg: "^#粉酱(强制)?更新$", //匹配消息正则，命令正则
         priority: 50, //优先级，越小优先度越高
         describe: "自主git pull，请先确认git pull命令有效", //【命令】功能说明
     },
@@ -23,6 +25,9 @@ export const rule = {
 
 };
 
+const _path = process.cwd();
+const resPath = `${_path}/plugins/fen-plugin/resources/`;
+const plusPath = `${resPath}/miao-res-plus/`;
 
 const checkAuth = async function (e) {
     return await e.checkAuth({
@@ -46,7 +51,7 @@ export async function fenupdate(e) {
     }
     exec(command, { cwd: `${_path}/plugins/fen-plugin/` }, function (error, stdout, stderr) {
         //console.log(stdout);
-        if (/Already up to date/.test(stdout)) {
+        if (/Already up[ -]to[ -]date/.test(stdout)) {
             e.reply("目前已经是最新版了~");
             return true;
         }
