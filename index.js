@@ -22,13 +22,13 @@ export {
 let rule = {
     //关于
     about: {
-        reg: "^#?(粉酱)?(详情|说明|使用说明)$",
+        reg: "^#?(粉酱)(详情|说明|使用说明)$",
         priority: 100,
         describe: "【#粉酱详情】 #粉酱详情",
     },
     //cookie帮助
     cookiehelp: {
-        reg: "^#?(cookie|功能)?(详情|帮助|说明|使用说明|演示)$",
+        reg: "^#?(cookie|功能)(详情|帮助|说明|使用说明|演示)$",
         priority: 100,
         describe: "",
     },
