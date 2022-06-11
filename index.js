@@ -1,19 +1,21 @@
-import { about, help, fenversion } from "./apps/about.js";
+import { about, cookiehelp, fenversion } from "./apps/about.js";
 import { version } from "./components/Changelog.js";
 import { fenupdate } from "./components/update.js";
 import { sese, sese1 } from "./apps/不可以涩涩.js"
 import { 群主, 调戏 } from "./apps/群主写真.js"
 import { 全局 } from "./apps/全局.js"
+import { newcomers } from "./apps/欢迎新人.js"
 export {
     about,
-    help,
+    cookiehelp,
     fenupdate,
     fenversion,
     sese,
     sese1,
     群主,
     调戏,
-    全局
+    全局,
+    newcomers
 };
 
 
@@ -24,16 +26,19 @@ let rule = {
         priority: 1,
         describe: "【#粉酱详情】 #粉酱详情",
     },
-    help: {
-        reg: "^#?(cookie|功能)?(详情|说明|使用说明|演示)$",
+    //cookie帮助
+    cookiehelp: {
+        reg: "^#?(cookie|功能)?(详情|帮助|说明|使用说明|演示)$",
         priority: 1,
         describe: "",
     },
+    //粉酱版本
     fenversion: {
         reg: "^#?粉酱版本$",
         priority: 2,
         describe: "粉酱版本",
     },
+    //粉酱更新
     fenupdate: {
         reg: "^#*粉酱更新$", //匹配消息正则，命令正则
         priority: 5000, //优先级，越小优先度越高
@@ -44,6 +49,13 @@ let rule = {
     //     priority: 5000, //优先级，越小优先度越高
     //     describe: "检查更新", //【命令】功能说明
     // },
+    //欢迎新人
+    newcomers: {
+        reg: "^#欢迎新人$", //匹配消息正则，命令正则
+        priority: 50, //优先级，越小优先度越高
+        describe: "【#欢迎新人】开发简单示例演示", //【命令】功能说明
+    },
+    //不可以涩涩
     sese: {
         reg: "^#?(涩涩|色色|瑟瑟|sese)$", //匹配消息正则，命令正则
         priority: 5, //优先级，越小优先度越高

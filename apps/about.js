@@ -12,8 +12,8 @@ export const rule = {
     priority: 1,
     describe: "【#粉酱详情】 #粉酱详情",
   },
-  help: {
-    reg: "^#?(cookie|功能)?(详情|说明|使用说明|演示)$",
+  cookiehelp: {
+    reg: "^#?(cookie|功能)?(详情|帮助|说明|使用说明|演示)$",
     priority: 1,
     describe: "",
   },
@@ -29,22 +29,15 @@ let aboutImg, aboutMd5;
 let useImg = false;
 
 export async function about(e) {
-  if (e.at && !e.atBot) {
-    return;
-  }
-  let msg = [];
-  if (!e.isMaster && e.isGroup && lodash.random(0, 3) <= 1) {
-    msg.push("当前版本0.0.1");
-  }
-  e.reply(msg);
+  e.reply("粉酱fen-plugin插件\n项目地址：https://github.com/litefen/fen-plugin");
   return true;
 }
-export async function help(e) {
+export async function cookiehelp(e) {
   let msg = [
     //@用户
     segment.at(e.user_id),
     //文本消息
-    "\ncookie绑定指南：https://blog.litefen.com/all/bbscookie.html\n所有功能详细使用指南：https://blog.litefen.com/all/yunzaihelp.html",
+    "cookie绑定指南：https://blog.litefen.com/all/bbscookie.html\n所有功能详细使用指南：https://blog.litefen.com/all/yunzaihelp.html",
   ];
   e.reply(msg);
 }
