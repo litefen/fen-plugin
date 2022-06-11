@@ -67,6 +67,6 @@ try {
   // do nth
 }
 
-const yunzaiVersion = packageJson.version;
+const fenVersion = packageJson.version;
 
-export { version, yunzaiVersion, changelogs };
+export { version, fenVersion, changelogs };
