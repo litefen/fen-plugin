@@ -22,7 +22,7 @@ export async function newcomers(e) {
         //@用户
         segment.at(e.user_id),
         //文本消息
-        "\n欢迎~欢迎~\n我是阿晴，想更多了解我吗？\n发送#阿晴详情就可以查看详细介绍哦~",
+        "\n欢迎~欢迎~\n发送#bot详情就可以查看此群bot的详细介绍哦~",
     ];
     e.reply(ms);
     let msg = [
