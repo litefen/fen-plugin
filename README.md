@@ -13,7 +13,7 @@ github仓库
 `git clone  https://gitee.com/litefen/fen-plugin.git`
 
 ## 更新
-
+ **暂时更新功能可能有问题，如果有意外请手动更新₍ᐢ⸝⸝› ̫ ‹⸝⸝ᐢ₎**
  发送#粉酱更新、#粉酱强制更新（如果你对粉酱进行过修改、强制更新会全部失效）
 
 或者在fen-plugin目录打开cmd手动git pull
