@@ -1,10 +1,9 @@
-import { about, cookiehelp, fenversion } from "./apps/about.js";
+import { about, cookiehelp, fenversion, bothelp } from "./apps/about.js";
 import { version } from "./components/Changelog.js";
 import { fenupdate } from "./components/update.js";
 import { sese, sese1 } from "./apps/不可以涩涩.js"
 import { 群主, 调戏 } from "./apps/群主写真.js"
 import { 全局 } from "./apps/全局.js"
-import { newcomers } from "./apps/欢迎新人.js"
 export {
     about,
     cookiehelp,
@@ -15,9 +14,8 @@ export {
     群主,
     调戏,
     全局,
-    newcomers
+    bothelp
 };
-
 
 let rule = {
     //关于
@@ -38,6 +36,11 @@ let rule = {
         priority: 200,
         describe: "粉酱版本",
     },
+    bothelp: {
+        reg: "^#?(阿晴|bot|帮助|使用)(帮助|详情|说明|使用文档|文档|演示)$",
+        priority: 10,
+        describe: "粉酱版本",
+    },
     //粉酱更新
     fenupdate: {
         reg: "^#*粉酱更新$", //匹配消息正则，命令正则
@@ -49,12 +52,6 @@ let rule = {
     //     priority: 5000, //优先级，越小优先度越高
     //     describe: "检查更新", //【命令】功能说明
     // },
-    //欢迎新人
-    newcomers: {
-        reg: "^#欢迎新人$", //匹配消息正则，命令正则
-        priority: 500, //优先级，越小优先度越高
-        describe: "【#欢迎新人】开发简单示例演示", //【命令】功能说明
-    },
     //不可以涩涩
     sese: {
         reg: "^#?(涩涩|色色|瑟瑟|sese)$", //匹配消息正则，命令正则
