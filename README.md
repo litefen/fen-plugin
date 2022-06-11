@@ -5,8 +5,10 @@ Fen-Plugin是一个Yunzai-Bot的扩展插件（缝合怪）；粉酱
 # 使用说明
 ## 安装
 在\yunzai-bot\plugins文件夹打开cmd
+
 github仓库
 `git clone  https://github.com/litefen/fen-plugin.git`
+
 或者gitee仓库
 `git clone  https://gitee.com/litefen/fen-plugin.git`
 
