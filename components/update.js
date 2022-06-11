@@ -1,10 +1,9 @@
 import fs from "fs";
 import { segment } from "oicq";
-import lodash from "lodash";
+import fetch from "node-fetch";
 import { exec } from "child_process";
-import { currentVersion, fenVersion } from "./Changelog.js";
 import { createRequire } from "module";
-import Common from "../components/Common.js";
+const _path = process.cwd();
 
 const mresPath = `${_path}/plugins/fen-plugin/`;
 let packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
@@ -25,9 +24,6 @@ export const rule = {
 
 };
 
-const _path = process.cwd();
-const resPath = `${_path}/plugins/fen-plugin/resources/`;
-const plusPath = `${resPath}/miao-res-plus/`;
 
 const checkAuth = async function (e) {
     return await e.checkAuth({
