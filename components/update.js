@@ -27,7 +27,7 @@ export const rule = {
 const checkAuth = async function (e) {
     return await e.checkAuth({
         auth: "master",
-        replyMsg: `只有主人才能命令喵喵哦~
+        replyMsg: `只有主人才能命令阿晴哦~
     (*/ω＼*)`
     });
 }
@@ -44,7 +44,7 @@ export async function fenupdate(e) {
     } else {
         e.reply("正在执行更新操作，请稍等");
     }
-    exec(command, { cwd: `${_path}/plugins/miao-plugin/` }, function (error, stdout, stderr) {
+    exec(command, { cwd: `${_path}/plugins/fen-plugin/` }, function (error, stdout, stderr) {
         //console.log(stdout);
         if (/Already up to date/.test(stdout)) {
             e.reply("目前已经是最新版了~");
@@ -65,7 +65,7 @@ export async function fenupdate(e) {
             exec(command, function (error, stdout, stderr) {
                 if (error) {
                     if (/Yunzai not found/.test(error)) {
-                        e.reply("自动重启失败，请手动重启以应用新版喵喵。请使用 npm run start 命令启动Yunzai-Bot");
+                        e.reply("自动重启失败，请手动重启以应用新版bot。请使用 npm run start 命令启动Yunzai-Bot");
                     } else {
                         e.reply("重启失败！\nError code: " + error.code + "\n" + error.stack + "\n 请稍后重试。");
                     }
