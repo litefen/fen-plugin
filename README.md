@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-<a href="https://github.com/litefen/fen-plugin" target="_blank">
+<a href="https://blog.litefen.com/all/fen-plugin.html" target="_blank">
 <img src="data/readme/111.png" alt="litefen" height="405" width="477"/>
 </a>
 </p>
