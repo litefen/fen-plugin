@@ -1,7 +1,7 @@
 <br>
 <p align="center">
 <a href="https://sli.dev" target="_blank">
-<img src="data/readme/111.png" alt="litefen" height="250" width="250"/>
+<img src="data/readme/111.png" alt="litefen" height="405" width="477"/>
 </a>
 </p>
 
