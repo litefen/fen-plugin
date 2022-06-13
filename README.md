@@ -2,6 +2,7 @@
 Fen-Plugin是一个Yunzai-Bot的扩展插件（缝合怪）；粉酱
 # 当前版本
 2022年6月10日 [**粉酱fen-plugin-0.0.3**](https://github.com/litefen/fen-plugin)
+2022年6月11日 [**粉酱fen-plugin-0.0.4**](https://github.com/litefen/fen-plugin)
 # 使用说明
 ## 安装
 在\yunzai-bot\plugins文件夹打开cmd
