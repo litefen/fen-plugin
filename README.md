@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-一个<a href="https://github.com/Le-niao/Yunzai-Bot" target="__blank"><b>Yunzai-Bot</b></a>的扩展插件，by <a  href="https://github.com/litefen" target="__blank"><b>litefen </b></a>🧑‍💻👩‍💻👨‍💻
+🤹 一个<a href="https://github.com/Le-niao/Yunzai-Bot" target="__blank"><b>Yunzai-Bot</b></a>的扩展插件，by <a  href="https://github.com/litefen" target="__blank"><b>litefen</b></a> 🧑‍💻
 </p>
 
 <p align="center">
