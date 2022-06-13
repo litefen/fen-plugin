@@ -47,13 +47,19 @@ git clone  https://gitee.com/litefen/fen-plugin.git
 ## 当前功能
 <details>
 <summary>
-📝 #涩涩|色色|就要涩涩 - 不可以涩涩，涩涩就挨打
+📝 #涩涩|色色|就要涩涩
+</br>
 </summary>
+不可以涩涩，涩涩就挨打
+</br>
 <img src="data/readme/涩涩.png" alt="#涩涩"></br></br>
+
 🤹 #偏要|就要|偏要|给我涩涩</br>
 
 都说了不可以，涩涩就禁言五分钟（需要bot是管理员）
+
 <img src="data/readme/就要涩涩.png" alt="#涩涩">
+
 </details>
 
 <details>
@@ -71,17 +77,17 @@ git clone  https://gitee.com/litefen/fen-plugin.git
 代替yunzai的全局表情包、语音功能；增加视频功能；发送文件名触发
 </br>
 
-*音频、语音文件/fen-plugin/resources/global/voice/*
+*音频、语音文件`/fen-plugin/resources/global/voice/`*
  
 <img src="data/readme/哒哒哒.png" alt="全局">
 </br>
 
-*表情、图片目录/fen-plugin/resources/global/img/*
+*表情、图片目录`/fen-plugin/resources/global/img/`*
  
 <img src="data/readme/吃啥呢.png" alt="全局">
 </br>
 
-*视频文件/fen-plugin/resources/global/video/*
+*视频文件`/fen-plugin/resources/global/video/`*
  
 <img src="data/readme/啊对对对.png" alt="全局">
 
