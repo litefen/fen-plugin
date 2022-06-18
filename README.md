@@ -29,12 +29,12 @@
 
 github仓库使用
 ```bash
-git clone  https://github.com/litefen/fen-plugin.git
+git clone https://github.com/litefen/fen-plugin.git
 ```
 或者gitee仓库
 
 ```bash
-git clone  https://gitee.com/litefen/fen-plugin.git
+git clone https://gitee.com/litefen/fen-plugin.git
 ```
 ### 更新
 
