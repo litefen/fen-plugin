@@ -45,6 +45,20 @@ git clone https://gitee.com/litefen/fen-plugin.git
 或者在fen-plugin目录打开cmd手动git pull
 
 ## 🤹 当前功能
+
+<details>
+<summary>
+📰 #bot详情 #帮助文档
+</br>
+</summary>
+一个我写的yunzai-bot的所有功能的使用演示和cookie获取合集（不包含ios获取方法）</br>
+发送以下命令均可触发</br>
+ #cookie详情 #(bot|帮助|使用)(详情|说明使用文档|文档|演示)
+
+<img src="data/readme/帮助文档.png" alt="#bot详情"></br></br>
+
+</details>
+
 <details>
 <summary>
 🎥 #涩涩|色色|就要涩涩
