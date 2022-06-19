@@ -21,9 +21,9 @@
 </p>
 
 
-## 使用说明
+## 📝 使用说明
 
-### 安装
+### 🧰 安装
 
 在\yunzai-bot\plugins文件夹打开cmd
 
@@ -44,10 +44,10 @@ git clone https://gitee.com/litefen/fen-plugin.git
 
 或者在fen-plugin目录打开cmd手动git pull
 
-## 当前功能
+## 🤹 当前功能
 <details>
 <summary>
-📝 #涩涩|色色|就要涩涩
+🎥 #涩涩|色色|就要涩涩
 </br>
 </summary>
 不可以涩涩，涩涩就挨打
@@ -108,9 +108,9 @@ git clone https://gitee.com/litefen/fen-plugin.git
 - 🛠 [**Hackable**](https://sli.dev/custom/config-vite.html) - using Vite plugins, Vue components, or any npm packages. -->
 
 
-## 其他
+## 🌈 其他
 
-- ⚡️ [**QQ群1082436231**](https://jq.qq.com/?_wv=1027&k=VKPVXSfU) - [**派蒙怎么做好吃 ₍ᐢ⸝⸝› ̫ ‹⸝⸝ᐢ₎**](https://jq.qq.com/?_wv=1027&k=VKPVXSfU).
+- 🎨 [**QQ群1082436231**](https://jq.qq.com/?_wv=1027&k=VKPVXSfU) - [**派蒙怎么做好吃 ₍ᐢ⸝⸝› ̫ ‹⸝⸝ᐢ₎**](https://jq.qq.com/?_wv=1027&k=VKPVXSfU).
 
-## 可能遇到的问题
+## ⚡️ 可能遇到的问题
 有问题很正常，能跑就行，不能跑那就卸载吧，我还没开发好
