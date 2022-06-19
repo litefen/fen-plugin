@@ -36,7 +36,7 @@ git clone https://github.com/litefen/fen-plugin.git
 ```bash
 git clone https://gitee.com/litefen/fen-plugin.git
 ```
-### 更新
+### 💻 更新
 
  **暂时更新功能可能有问题，如果有意外请手动更新₍ᐢ⸝⸝› ̫ ‹⸝⸝ᐢ₎**
 
