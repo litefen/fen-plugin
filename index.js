@@ -78,20 +78,13 @@ let rule = {
         priority: 200, //优先级，越小优先度越高
         describe: "【文件名】就是触发指令", //【命令】功能说明
     },
-
-    //全局表情
-    // allface: {
-    //     reg: "",
-    //     priority: 1,
-    //     describe: "全局列表",
-    // },
 };
 
-// lodash.forEach(rule, (r) => {
-//     r.priority = r.priority || 1;
-//     r.prehash = true;
-//     r.hashMark = true;
-// });
+lodash.forEach(rule, (r) => {
+    r.priority = r.priority || 50;
+    r.prehash = true;
+    r.hashMark = true;
+  });
 
 export { rule };
 
@@ -103,7 +96,7 @@ setTimeout(async function () {
         let msg = JSON.parse(msgStr);
         await common.relpyPrivate(msg.qq, msg.msg);
         await redis.del("fen:restart-msg");
-        let msgs = [`当前粉酱版本: ${version}`, `您可使用 #粉酱版本 命令查看更新信息`];
+        let msgs = [`当前粉酱版本: ${currentVersion}`, `您可使用 #粉酱版本 命令查看更新信息`];
         await common.relpyPrivate(msg.qq, msgs.join("\n"));
     }
 }, 1000);

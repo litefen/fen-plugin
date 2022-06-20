@@ -62,19 +62,22 @@ export async function fenupdate(e) {
             qq: e.user_id
         }), { EX: 30 });
         timer = setTimeout(function () {
-            let command = "npm run restart";
+            let command = `npm run start`;
+            if (process.argv[1].includes("pm2")) {
+                command = `npm run restart`;
+            }
             exec(command, function (error, stdout, stderr) {
                 if (error) {
-                    if (/Yunzai not found/.test(error)) {
-                        e.reply("自动重启失败，请手动重启以应用新版bot。请使用 npm run start 命令启动Yunzai-Bot");
-                    } else {
-                        e.reply("重启失败！\nError code: " + error.code + "\n" + error.stack + "\n 请稍后重试。");
-                    }
-                    return true;
-                }
-            })
-        }, 1000);
-
+                    e.reply("自动重启失败，请手动重启以应用新版粉酱。\nError code: " + error.code + "\n" + error.stack + "\n");
+          Bot.logger.error('重启失败\n${error.stack}');
+          return true;
+        } else if (stdout) {
+          Bot.logger.mark("重启成功，运行已转为后台，查看日志请用命令：npm run log");
+          Bot.logger.mark("停止后台运行命令：npm stop");
+          process.exit();
+        }
+      })
+    }, 1000);
     });
     return true;
 }
