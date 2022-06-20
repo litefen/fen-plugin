@@ -80,11 +80,11 @@ let rule = {
     },
 };
 
-lodash.forEach(rule, (r) => {
-    r.priority = r.priority || 50;
-    r.prehash = true;
-    r.hashMark = true;
-  });
+// lodash.forEach(rule, (r) => {
+//     r.priority = r.priority || 50;
+//     r.prehash = true;
+//     r.hashMark = true;
+//   });
 
 export { rule };
 

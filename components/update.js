@@ -1,5 +1,6 @@
 import fs from "fs";
 import { segment } from "oicq";
+import lodash from "lodash";
 import fetch from "node-fetch";
 import { exec } from "child_process";
 import { createRequire } from "module";
@@ -24,12 +25,12 @@ export const rule = {
 
 };
 
+const _path = process.cwd();
 
 const checkAuth = async function (e) {
     return await e.checkAuth({
         auth: "master",
-        replyMsg: `只有主人才能命令阿晴哦~
-    (*/ω＼*)`
+        replyMsg: `只有主人才能命令粉酱哦~`
     });
 }
 let timer;
