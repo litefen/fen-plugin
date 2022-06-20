@@ -4,11 +4,8 @@ import lodash from "lodash";
 import fetch from "node-fetch";
 import { exec } from "child_process";
 import { createRequire } from "module";
-const _path = process.cwd();
 
-const mresPath = `${_path}/plugins/fen-plugin/`;
-let packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
-let upKey = "fenlite:github-pushed";
+const require = createRequire(import.meta.url);
 
 export const rule = {
     fenupdate: {
@@ -26,6 +23,8 @@ export const rule = {
 };
 
 const _path = process.cwd();
+const resPath = `${_path}/plugins/miao-plugin/resources/`;
+const plusPath = `${resPath}/miao-res-plus/`;
 
 const checkAuth = async function (e) {
     return await e.checkAuth({

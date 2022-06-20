@@ -3,6 +3,7 @@ import lodash from "lodash";
 import { segment } from "oicq";
 import fs from "fs";
 import { version, changelogs } from "../components/Changelog.js";
+
 const _path = process.cwd();
 
 export const rule = {
