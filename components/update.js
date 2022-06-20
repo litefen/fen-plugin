@@ -57,7 +57,7 @@ export async function fenupdate(e) {
         }
         e.reply("更新成功，尝试重新启动Yunzai以应用更新...");
         timer && clearTimeout(timer);
-        redis.set("miao:restart-msg", JSON.stringify({
+        redis.set("fen:restart-msg", JSON.stringify({
             msg: "重启成功，新版fen-Plugin已经生效",
             qq: e.user_id
         }), { EX: 30 });

@@ -98,11 +98,11 @@ export { rule };
 console.log(`粉酱插件${version}初始化~`);
 
 setTimeout(async function () {
-    let msgStr = await redis.get("miao:restart-msg");
+    let msgStr = await redis.get("fen:restart-msg");
     if (msgStr) {
         let msg = JSON.parse(msgStr);
         await common.relpyPrivate(msg.qq, msg.msg);
-        await redis.del("miao:restart-msg");
+        await redis.del("fen:restart-msg");
         let msgs = [`当前粉酱版本: ${version}`, `您可使用 #粉酱版本 命令查看更新信息`];
         await common.relpyPrivate(msg.qq, msgs.join("\n"));
     }
