@@ -27,11 +27,11 @@
 
 在\yunzai-bot\plugins文件夹打开cmd
 
-github仓库使用
+使用[github仓库](https://github.com/litefen/fen-plugin)
 ```bash
 git clone https://github.com/litefen/fen-plugin.git
 ```
-或者gitee仓库
+或者[gitee仓库](https://gitee.com/litefen/fen-plugin)
 
 ```bash
 git clone https://gitee.com/litefen/fen-plugin.git
