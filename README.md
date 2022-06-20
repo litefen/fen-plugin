@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/litefen/fen-plugin" target="__blank"><img src="https://img.shields.io/badge/v-0.0.4-red?color=ff6a91" alt="version"></a>
-<a href="https://github.com/litefen/fen-plugin" target="__blank"><img src="https://img.shields.io/badge/v-0.0.4-red?color=ff6a91" alt="version"></a>
+<a href="https://github.com/litefen/fen-plugin" target="__blank"><img src="https://img.shields.io/badge/v-0.0.5-red?color=ff6a91" alt="version"></a>
+<a href="https://github.com/litefen/fen-plugin" target="__blank"><img src="https://img.shields.io/badge/v-0.0.5-red?color=ff6a91" alt="version"></a>
 <br>
 <a href="https://github.com/litefen/fen-plugin" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/litefen/fen-plugin?style=social"></a>
 </p>
