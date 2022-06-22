@@ -90,7 +90,7 @@ git clone https://gitee.com/litefen/fen-plugin.git
 <summary>🎨 全局功能</summary>
 代替yunzai的全局表情包、语音功能；增加视频功能；发送文件名触发</br>
 查看全局列表
- #(语音|全局表情|视频)(列表|目录|有哪些)
+ #(语音|全局表情|视频)(列表|目录|有哪些)</br>
  表情列表和yunzai自带的表情列表重复了，这里改为了全局表情列表触发
 </br>
 
