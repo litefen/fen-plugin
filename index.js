@@ -3,18 +3,21 @@ import { version } from "./components/Changelog.js";
 import { fenupdate } from "./components/update.js";
 import { sese, sese1 } from "./apps/不可以涩涩.js"
 import { 群主, 调戏 } from "./apps/群主写真.js"
-import { 全局 } from "./apps/全局.js"
+import { 全局, voicelist , videolist , imglist } from "./apps/全局.js"
 export {
     about,
     cookiehelp,
     fenupdate,
     fenversion,
+    bothelp,
     sese,
     sese1,
     群主,
     调戏,
     全局,
-    bothelp
+    voicelist,
+    videolist,
+    imglist,
 };
 
 let rule = {
@@ -77,6 +80,21 @@ let rule = {
         reg: "", //匹配消息正则，命令正则
         priority: 200, //优先级，越小优先度越高
         describe: "【文件名】就是触发指令", //【命令】功能说明
+    },
+    voicelist: {
+        reg: "^#?(语音)(列表|目录)$",
+        priority: 100,
+        describe: "语音列表",
+    },
+    videolist: {
+        reg: "^#?(视频)(列表|目录|有哪些)$",
+        priority: 100,
+        describe: "语音列表",
+    },
+    imglist: {
+        reg: "^#?(全局表情|表情包)(列表|目录|有哪些)$",
+        priority: 100,
+        describe: "语音列表",
     },
 };
 

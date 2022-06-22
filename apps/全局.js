@@ -20,6 +20,21 @@ export const rule = {
     priority: 200, //优先级，越小优先度越高
     describe: "【文件名】就是触发指令", //【命令】功能说明
   },
+  voicelist: {
+    reg: "^#?(语音)(列表|目录|有哪些)$",
+    priority: 100,
+    describe: "语音列表",
+  },
+  videolist: {
+    reg: "^#?(视频)(列表|目录|有哪些)$",
+    priority: 100,
+    describe: "语音列表",
+  },
+  imglist: {
+    reg: "^#?(全局表情|表情包)(列表|目录|有哪些)$",
+    priority: 100,
+    describe: "语音列表",
+  },
 };
 
 init();
@@ -154,4 +169,33 @@ function watchFile(dir, type) {
       fsTimeout[type] = null;
     }, 5000);
   });
+}
+export async function voicelist(e) {
+  // 同步读取example目录下的所有文件
+    const files = fs.readdirSync('./plugins/fen-plugin/resources/global/voice/');
+    let msg = files.map(file => {
+    return ` \n${file.replace(/.amr|.silk|.mp3/, "")}` ;
+    });
+    e.reply("当前所有："+""+msg+""+"\n(A-B-C-D)【复制-前后都可以，直接发送名字即可】");
+    return true;
+}
+
+export async function videolist(e) {
+  // 同步读取example目录下的所有文件
+    const files = fs.readdirSync('./plugins/fen-plugin/resources/global/video/');
+    let msg = files.map(file => {
+    return ` \n${file.replace(/.mp4/, "")}` ;
+    });
+    e.reply("当前所有："+""+msg+""+"\n(A-B-C-D)【复制-前后都可以，直接发送名字即可】");
+    return true;
+}
+
+export async function imglist(e) {
+  // 同步读取example目录下的所有文件
+    const files = fs.readdirSync('./plugins/fen-plugin/resources/global/img/');
+    let msg = files.map(file => {
+    return ` \n${file.replace(/.jpg|.png|.gif/, "")}` ;
+    });
+    e.reply("当前所有："+""+msg+""+"\n(A-B-C-D)【直接发送名字：A或者B即可,复制-前后都可以】");
+    return true;
 }
