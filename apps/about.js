@@ -9,7 +9,7 @@ const _path = process.cwd();
 export const rule = {
   //帮助说明
   about: {
-    reg: "^#?(粉酱)(详情|说明|使用说明)$",
+    reg: "^#?(粉酱)(详情|说明|使用说明|github|项目|地址)$",
     priority: 100,
     describe: "【#粉酱详情】 #粉酱详情",
   },
@@ -25,7 +25,7 @@ export const rule = {
   },
   //代替自带的演示文档
   bothelp: {
-    reg: "^#?(晴酱|bot|帮助|使用)(详情|说明使用文档|文档|演示)$",
+    reg: "^#?(晴酱|bot|帮助|使用|演示)(帮助|详情|说明|使用文档|文档|演示)$",
     priority: 10,
     describe: "粉酱版本",
   },

@@ -5,7 +5,7 @@ const _path = process.cwd();
 //1.定义命令规则
 export const rule = {
   sese: {
-    reg: "^#?(涩涩|色色|瑟瑟|sese)$", //匹配消息正则，命令正则
+    reg: "^#?(涩涩|色色|瑟瑟|sese|涩图|色图)$", //匹配消息正则，命令正则
     priority: 500, //优先级，越小优先度越高
     describe: "不可以涩涩", //【命令】功能说明【#例子】开发简单示例演示
   },

@@ -13,13 +13,6 @@ export const rule = {
     describe: "帮助文档", //【命令】功能说明【#例子】开发简单示例演示
 
   },
-  yuyin: {
-    reg: "^#?(语音列表)$", //匹配消息正则，命令正则
-    //"^11$" 关键词11
-    //
-    priority: 800, //优先级，越小优先度越高
-    describe: "语音列表", //【命令】功能说明【#例子】开发简单示例演示
-  },
   jinqun: {
     reg: "^#?(进群|拉群|拉机器人进群|拉bot)$", //匹配消息正则，命令正则
     //"^11$" 关键词11
@@ -48,13 +41,6 @@ export async function help(e) {
     segment.at(e.user_id),
     //文本消息
     "\ncookie绑定指南：https://blog.litefen.com/all/bbscookie.html\n所有功能详细使用指南：https://blog.litefen.com/all/yunzaihelp.html",
-  ];
-  e.reply(msg);
-}
-export async function yuyin(e) {
-  let msg = [
-    segment.at(e.user_id),
-    segment.image(`file:///${_path}/resources/小粉/语音列表.png`),
   ];
   e.reply(msg);
 }
