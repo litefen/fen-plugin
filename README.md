@@ -126,12 +126,12 @@ git clone https://gitee.com/litefen/fen-plugin.git
 
 
 ## ⚡️ 可能遇到的问题
-如果启动遇到fen-plugin相关的报错，那就删了吧，可能当前版本有bug，因为测试量少，很多bug我也没有注意到,可以去群里反馈 ⚆_⚆
+暂不适配yunzai-bot v3，如果启动遇到fen-plugin相关的报错，那就删了吧，可能当前版本有bug，因为测试量少，很多bug我也没有注意到,可以去群里反馈 ⚆_⚆
 
 有问题很正常，能跑就行，不能跑那就卸载吧，摆烂.jpg
 
 ## 🌈 闲聊吹水群
+不给进了
+<!-- - 🎨 [**QQ群1082436231**](https://jq.qq.com/?_wv=1027&k=VKPVXSfU) - [**派蒙怎么做好吃 ₍ᐢ⸝⸝› ̫ ‹⸝⸝ᐢ₎**](https://jq.qq.com/?_wv=1027&k=VKPVXSfU)
 
-- 🎨 [**QQ群1082436231**](https://jq.qq.com/?_wv=1027&k=VKPVXSfU) - [**派蒙怎么做好吃 ₍ᐢ⸝⸝› ̫ ‹⸝⸝ᐢ₎**](https://jq.qq.com/?_wv=1027&k=VKPVXSfU)
-
-* 不要拿小号加群啊喂！低于两个太阳是不给进的
+* 不要拿小号加群啊喂！低于两个太阳是不给进的 -->
