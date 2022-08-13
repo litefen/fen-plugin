@@ -21,6 +21,7 @@
 </p>
 
 # 不适配V3有问题别找我
+有能力的可以去自己适配
 
 ## 📝 使用说明
 
@@ -127,8 +128,7 @@ git clone https://gitee.com/litefen/fen-plugin.git
 
 
 ## ⚡️ 可能遇到的问题
-暂不适配yunzai-bot v3，如果启动遇到fen-plugin相关的报错，那就删了吧，
-有问题很正常，能跑就行，不能跑那就卸载吧，摆烂.jpg
+暂不适配yunzai-bot v3，如果启动遇到fen-plugin相关的报错，那就删了吧，有问题很正常，能跑就行，不能跑那就卸载吧，摆烂.jpg
 
 ## 🌈 闲聊吹水群
 不给进了
