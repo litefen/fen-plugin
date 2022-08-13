@@ -20,6 +20,7 @@
   <a href="https://github.com/litefen/fen-plugin"><b>Github</b></a> | <a href="https://blog.litefen.com/"><b>小粉litefen</b></a>
 </p>
 
+# 不适配V3有问题别找我
 
 ## 📝 使用说明
 
